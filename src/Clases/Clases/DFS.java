@@ -11,10 +11,12 @@ public class DFS {
 	}
 
 	public static void visitarNodoDFS(NodoGrafo nodo, ArrayList<Integer> lista) {
-		//Lo marco
+		//Lo marco en gris
 		nodo.Visitado = true;
+		//En aux guardo los adyacentes del nodo con el que convoque al metodo
 		NodoArista aux = nodo.lista;
 
+		//Mientras no me quede sin adyacentes
 		while (aux != null) {
 			if (!aux.apunta.Visitado) {
 				//Imprimo el nodo que visito y el que voy a visitar.
@@ -25,7 +27,7 @@ public class DFS {
 				aux = aux.sig;
 			}
 		}
-
+		//Agrego a la salida al nodo (marcar en negro).
 		lista.add(nodo.valor);
 	}
 
