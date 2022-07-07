@@ -1,8 +1,9 @@
 # TPO_P3
 
-Implementaciones PRIM y BFS
+Implementaciones DFS y BFS
 
 Integrantes:
-- Martin Vazquez
-- German Mainero
+- Mainero German - LU: 1024139
+- Vázquez Martín - LU: 1036863
 
+:)
